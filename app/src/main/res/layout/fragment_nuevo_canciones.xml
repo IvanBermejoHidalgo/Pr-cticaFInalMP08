@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NuevoCancionesFragment">
+
+    <EditText
+        android:id="@+id/nombrecancion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Canción"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="32sp"/>
+    <EditText
+        android:id="@+id/nombreartista2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Artista"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="32sp"/>
+    <Button
+        android:id="@+id/crear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/rojoprimario"
+        android:textColor="@color/white"
+        android:text="CREAR"
+        android:textSize="32sp"/>
+
+</LinearLayout>

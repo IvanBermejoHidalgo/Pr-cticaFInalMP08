@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerElementosFragment">
+
+    <fragment
+        android:id="@+id/recyclerElementosFragment"
+        android:name="com.example.roomtemplate.RecyclerElementosFragment"
+        android:label="Artistas"
+        tools:layout="@layout/fragment_recycler_elementos" />
+    <fragment
+        android:id="@+id/recyclerValoracionFragment"
+        android:name="com.example.roomtemplate.RecyclerValoracionFragment"
+        android:label="Ordenador por favorito"
+        tools:layout="@layout/fragment_recycler_elementos" />
+    <fragment
+        android:id="@+id/recyclerBuscarFragment"
+        android:name="com.example.roomtemplate.RecyclerBusquedaFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_recycler_elementos" />
+
+    <action
+        android:id="@+id/action_mostrarElementoFragment"
+        app:destination="@id/mostrarElementoFragment" />
+    <action
+        android:id="@+id/action_nuevoElementoFragment"
+        app:destination="@id/nuevoElementoFragment" />
+
+    <fragment
+        android:id="@+id/nuevoElementoFragment"
+        android:name="com.example.roomtemplate.NuevoElementoFragment"
+        android:label="Añadir"
+        tools:layout="@layout/fragment_nuevo_elemento" />
+    <fragment
+        android:id="@+id/mostrarElementoFragment"
+        android:name="com.example.roomtemplate.MostrarElementoFragment"
+        tools:layout="@layout/fragment_mostrar_elemento" />
+    <fragment
+        android:id="@+id/drawer1Fragment"
+        android:name="com.example.roomtemplate.Drawer1Fragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_drawer1" />
+    <fragment
+        android:id="@+id/drawer2Fragment"
+        android:name="com.example.roomtemplate.Drawer2Fragment"
+        android:label="Artistas favoritos"
+        tools:layout="@layout/fragment_drawer2" />
+    <fragment
+        android:id="@+id/drawer3Fragment"
+        android:name="com.example.roomtemplate.Drawer3Fragment"
+        android:label="Canciones"
+        tools:layout="@layout/fragment_drawer3" >
+        <action
+            android:id="@+id/action_drawer3Fragment_to_mostrarCancionesFragment"
+            app:destination="@id/mostrarCancionesFragment" />
+        <action
+            android:id="@+id/action_drawer3Fragment_to_nuevoCancionesFragment"
+            app:destination="@id/nuevoCancionesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabbed1Fragment"
+        android:name="com.example.roomtemplate.Tabbed1Fragment"
+        tools:layout="@layout/fragment_tabbed1" />
+    <fragment
+        android:id="@+id/nuevoCancionesFragment"
+        android:name="com.example.roomtemplate.NuevoCancionesFragment"
+        tools:layout="@layout/fragment_nuevo_canciones" />
+    <fragment
+        android:id="@+id/mostrarCancionesFragment"
+        android:name="com.example.roomtemplate.MostrarCancionesFragment"
+        tools:layout="@layout/fragment_mostrar_canciones" />
+</navigation>

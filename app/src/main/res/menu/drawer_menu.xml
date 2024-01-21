@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drawer1Fragment"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Búsqueda de canciones" />
+
+    <item
+        android:id="@+id/drawer2Fragment"
+        android:icon="@drawable/outline_assignment_ind_24"
+        android:title="Artistas favoritos" />
+
+    <item
+        android:id="@+id/drawer3Fragment"
+        android:icon="@drawable/baseline_add_24"
+        android:title="Canciones" />
+</menu>
